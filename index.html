@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="">
+  <meta name="description" content="This is meta description">
   <meta name="author" content="권순규">
   <meta name="generator" content="Hugo 0.91.2" />
 
@@ -38,7 +38,25 @@
 
   
 
-</head><body><header class="navigation fixed-top">
+  
+  <link rel="stylesheet" href="https://kwonskdev.github.io/css/custom.css">
+  
+
+  
+    <script type="text/javascript" src="https://kwonskdev.github.io/js/custom.js"></script>
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head><body onscroll="hide_sidebar();">
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="/images/preloader.gif " alt="preloader">
+  
+</div>
+<!-- preloader end -->
+<header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="https://kwonskdev.github.io/">
       
@@ -61,6 +79,14 @@
         
         
         <li class="nav-item ">
+          <a class="nav-link" href="https://kwonskdev.github.io/about">About</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
           <a class="nav-link" href="https://kwonskdev.github.io/blog">Blog</a>
         </li>
         
@@ -70,6 +96,14 @@
         
         <li class="nav-item ">
           <a class="nav-link" href="https://kwonskdev.github.io/portfolio">Portfolio</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="https://kwonskdev.github.io/contact">Contact</a>
         </li>
         
         
@@ -117,6 +151,14 @@
     
     <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
       
+      <li class="mb-3"><a class="text-white" href="#"><i class="ti-facebook"></i></a></li>
+      
+      <li class="mb-3"><a class="text-white" href="#"><i class="ti-instagram"></i></a></li>
+      
+      <li class="mb-3"><a class="text-white" href="#"><i class="ti-dribbble"></i></a></li>
+      
+      <li class="mb-3"><a class="text-white" href="#"><i class="ti-twitter-alt"></i></a></li>
+      
     </ul>
     
   </section>
@@ -149,7 +191,7 @@
 
 
 
-<footer class="bg-dark footer-section">
+<footer class="bg-dark footer-section" id="footer" style="padding-top:50px;">
   <div class="section">
     <div class="container">
       <div class="row">
@@ -159,7 +201,7 @@
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary"><a href="tel:010-5559-1058">010-5559-1058</a></p>
+          <p class="text-white paragraph-lg font-secondary"><a href="tel:&#43;880%202544%20658%20256">&#43;880 2544 658 256</a></p>
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Address</h5>
@@ -169,7 +211,7 @@
     </div>
   </div>
   <div class="footer-bottom border-top text-center border-dark py-5">
-    <p class="mb-0 text-light"></p>
+    <p class="mb-0 text-light">Copyright © 2021 a Theme by <a href="https://gethugothemes.com">Gethugothemes</a></p>
   </div>
 </footer>
 
@@ -198,6 +240,46 @@
 
 
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
 </body>
 
 </html>
